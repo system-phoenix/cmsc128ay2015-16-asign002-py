@@ -50,13 +50,7 @@ def isValidString(string, alphabet):
 
 def getSkew(string, n):
 	string = list(string)
-	newString = []
-
-	for i in range(len(string)):
-		if(i >= n):
-			break
-		else :
-			newString.extend([string[i]])
+	newString = getFirstN(string, n)
 
 	g = 0
 	c = 0
@@ -68,3 +62,22 @@ def getSkew(string, n):
 		else :
 			continue
 	return(g - c)
+
+def getMaxSkewN(string, n):
+	string = list(string)
+	newString = getFirstN(string, n)
+
+	g = 0
+	for i in range(len(newString)):
+		if(newString[i] == 'G'):
+			g += 1
+	return g
+
+def getFirstN(l, n):
+	newString = []
+	for i in range(len(l)):
+		if(i >= n):
+			break
+		else :
+			newString.extend([l[i]])
+	return newString
