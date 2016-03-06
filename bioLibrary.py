@@ -62,9 +62,9 @@ def getSkew(string, n):
 	c = 0
 	for i in range(len(newString)):
 		if(newString[i] == 'G'):
-			g++
+			g += 1
 		elif(newString[i] == 'C'):
-			c++
+			c += 1
 		else :
 			continue
 	return(g - c)
