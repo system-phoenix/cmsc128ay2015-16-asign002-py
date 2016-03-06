@@ -73,6 +73,28 @@ def getMaxSkewN(string, n):
 			g += 1
 	return g
 
+def getMinSkewN(string, n):
+	string = list(string)
+	newString = getFirstN(string, n)
+
+
+	g = 0
+	c = 0
+	minG = 1
+	for i in range(len(newString)):
+		if(newString[i] == 'G'):
+			g += 1
+		elif(newString[i] == 'C'):
+			c += 1
+		else:
+			continue
+
+		if(minG > g - c):
+			minG = g - c
+
+	return minG
+
+
 def getFirstN(l, n):
 	newString = []
 	for i in range(len(l)):

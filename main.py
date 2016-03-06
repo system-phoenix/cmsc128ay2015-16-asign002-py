@@ -32,3 +32,10 @@ print("getMaxSkewN(GGCCAC, 2): ", bioLibrary.getMaxSkewN("GGCCAC", 2))										
 print("getMaxSkewN(GGCCAC, 3): ", bioLibrary.getMaxSkewN("GGCCAC", 3))													#2
 print("getMaxSkewN(GGCCAC, 4): ", bioLibrary.getMaxSkewN("GGCCAC", 4))													#2
 print("getMaxSkewN(GGCCAC, 5): ", bioLibrary.getMaxSkewN("GGCCAC", 5))													#2
+
+#Test cases for getMinSkewN
+print("getMinSkewN(GGCCAC, 1): ", bioLibrary.getMinSkewN("GGCCAC", 1))													#1
+print("getMinSkewN(GGCCAC, 2): ", bioLibrary.getMinSkewN("GGCCAC", 2))													#1
+print("getMinSkewN(GGCCAC, 3): ", bioLibrary.getMinSkewN("GGCCAC", 3))													#1
+print("getMinSkewN(GGCCAC, 4): ", bioLibrary.getMinSkewN("GGCCAC", 4))													#0
+print("getMinSkewN(GGCCAC, 5): ", bioLibrary.getMinSkewN("GGCCAC", 5))													#0
