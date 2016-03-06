@@ -18,5 +18,15 @@ def getHammingDistance(string1, string2):
 def countSubstrPattern(original, pattern):
 	original = list(original)
 	pattern = list(patter)
+	same = 0
 
-	if(len(original) < len(pattern)) : return 0
+	if(len(original) < len(pattern)) : return same
+	for i in range(len(original)):
+		if(original[i] == pattern[0]):
+			for j in range(len(pattern)):
+				match = 0
+				if(original[i + j] == pattern[j]):
+					match += 1
+			if(match == len(pattern)):
+				same += 1
+	return same
