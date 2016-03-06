@@ -16,6 +16,7 @@ def getHammingDistance(string1, string2):
 			return("Error: String lengths are not equal.")
 
 def countSubstrPattern(original, pattern):
-	x = 0
+	original = list(original)
+	pattern = list(patter)
 
-	
+	if(len(original) < len(pattern)) : return 0
