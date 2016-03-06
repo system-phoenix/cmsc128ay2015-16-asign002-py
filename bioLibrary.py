@@ -32,3 +32,18 @@ def countSubstrPattern(original, pattern):
 			if(match == len(pattern)):
 				same += 1
 	return same
+
+def isValidString(string, alphabet):
+	string = list(string)
+	alphabet = list(alphabet)
+
+	for i in range(len(string)):
+		match = "false"
+		for j in range(len(alphabet)):
+			if(string[i] == alphabet[j]):
+				match = "true"
+			else :
+				continue
+		if(match == "false"):
+			return "false"
+	return "true"
