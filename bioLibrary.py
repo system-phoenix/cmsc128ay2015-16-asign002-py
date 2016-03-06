@@ -50,6 +50,10 @@ def isValidString(string, alphabet):
 
 def getSkew(string, n):
 	string = list(string)
+
+	if(len(string) == 0):
+		return "Error: String is empty"
+	
 	newString = getFirstN(string, n)
 
 	g = 0
@@ -65,6 +69,10 @@ def getSkew(string, n):
 
 def getMaxSkewN(string, n):
 	string = list(string)
+
+	if(len(string) == 0):
+		return "Error: String is empty"
+
 	newString = getFirstN(string, n)
 
 	g = 0
@@ -75,12 +83,15 @@ def getMaxSkewN(string, n):
 
 def getMinSkewN(string, n):
 	string = list(string)
+
+	if(len(string) == 0):
+		return "Error: String is empty"
+
 	newString = getFirstN(string, n)
-
-
 	g = 0
 	c = 0
 	minG = 1
+
 	for i in range(len(newString)):
 		if(newString[i] == 'G'):
 			g += 1
