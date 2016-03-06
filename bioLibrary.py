@@ -47,3 +47,24 @@ def isValidString(string, alphabet):
 		if(match == "false"):
 			return "false"
 	return "true"
+
+def getSkew(string, n):
+	string = list(string)
+	newString = []
+
+	for i in range(len(string)):
+		if(i >= n):
+			break
+		else :
+			newString.extend([string[i]])
+
+	g = 0
+	c = 0
+	for i in range(len(newString)):
+		if(newString[i] == 'G'):
+			g++
+		elif(newString[i] == 'C'):
+			c++
+		else :
+			continue
+	return(g - c)
